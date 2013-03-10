@@ -1,0 +1,305 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		915E211C16ECE13300DB4A1D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 915E211B16ECE13300DB4A1D /* UIKit.framework */; };
+		915E211E16ECE13300DB4A1D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 915E211D16ECE13300DB4A1D /* Foundation.framework */; };
+		915E212016ECE13300DB4A1D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 915E211F16ECE13300DB4A1D /* CoreGraphics.framework */; };
+		915E212616ECE13300DB4A1D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 915E212416ECE13300DB4A1D /* InfoPlist.strings */; };
+		915E212816ECE13300DB4A1D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 915E212716ECE13300DB4A1D /* main.m */; };
+		915E212C16ECE13300DB4A1D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 915E212B16ECE13300DB4A1D /* AppDelegate.m */; };
+		915E212E16ECE13300DB4A1D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 915E212D16ECE13300DB4A1D /* Default.png */; };
+		915E213016ECE13300DB4A1D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 915E212F16ECE13300DB4A1D /* Default@2x.png */; };
+		915E213216ECE13300DB4A1D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 915E213116ECE13300DB4A1D /* Default-568h@2x.png */; };
+		915E213516ECE13300DB4A1D /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 915E213316ECE13300DB4A1D /* MainStoryboard.storyboard */; };
+		915E213816ECE13300DB4A1D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 915E213716ECE13300DB4A1D /* ViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		915E211816ECE13300DB4A1D /* ZoomViewSegue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZoomViewSegue.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		915E211B16ECE13300DB4A1D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		915E211D16ECE13300DB4A1D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		915E211F16ECE13300DB4A1D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		915E212316ECE13300DB4A1D /* ZoomViewSegue-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ZoomViewSegue-Info.plist"; sourceTree = "<group>"; };
+		915E212516ECE13300DB4A1D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		915E212716ECE13300DB4A1D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		915E212916ECE13300DB4A1D /* ZoomViewSegue-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZoomViewSegue-Prefix.pch"; sourceTree = "<group>"; };
+		915E212A16ECE13300DB4A1D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		915E212B16ECE13300DB4A1D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		915E212D16ECE13300DB4A1D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		915E212F16ECE13300DB4A1D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		915E213116ECE13300DB4A1D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		915E213416ECE13300DB4A1D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		915E213616ECE13300DB4A1D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		915E213716ECE13300DB4A1D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		915E211516ECE13300DB4A1D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				915E211C16ECE13300DB4A1D /* UIKit.framework in Frameworks */,
+				915E211E16ECE13300DB4A1D /* Foundation.framework in Frameworks */,
+				915E212016ECE13300DB4A1D /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		915E210F16ECE13300DB4A1D = {
+			isa = PBXGroup;
+			children = (
+				915E212116ECE13300DB4A1D /* ZoomViewSegue */,
+				915E211A16ECE13300DB4A1D /* Frameworks */,
+				915E211916ECE13300DB4A1D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		915E211916ECE13300DB4A1D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				915E211816ECE13300DB4A1D /* ZoomViewSegue.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		915E211A16ECE13300DB4A1D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				915E211B16ECE13300DB4A1D /* UIKit.framework */,
+				915E211D16ECE13300DB4A1D /* Foundation.framework */,
+				915E211F16ECE13300DB4A1D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		915E212116ECE13300DB4A1D /* ZoomViewSegue */ = {
+			isa = PBXGroup;
+			children = (
+				915E212A16ECE13300DB4A1D /* AppDelegate.h */,
+				915E212B16ECE13300DB4A1D /* AppDelegate.m */,
+				915E213316ECE13300DB4A1D /* MainStoryboard.storyboard */,
+				915E213616ECE13300DB4A1D /* ViewController.h */,
+				915E213716ECE13300DB4A1D /* ViewController.m */,
+				915E212216ECE13300DB4A1D /* Supporting Files */,
+			);
+			path = ZoomViewSegue;
+			sourceTree = "<group>";
+		};
+		915E212216ECE13300DB4A1D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				915E212316ECE13300DB4A1D /* ZoomViewSegue-Info.plist */,
+				915E212416ECE13300DB4A1D /* InfoPlist.strings */,
+				915E212716ECE13300DB4A1D /* main.m */,
+				915E212916ECE13300DB4A1D /* ZoomViewSegue-Prefix.pch */,
+				915E212D16ECE13300DB4A1D /* Default.png */,
+				915E212F16ECE13300DB4A1D /* Default@2x.png */,
+				915E213116ECE13300DB4A1D /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		915E211716ECE13300DB4A1D /* ZoomViewSegue */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 915E213B16ECE13300DB4A1D /* Build configuration list for PBXNativeTarget "ZoomViewSegue" */;
+			buildPhases = (
+				915E211416ECE13300DB4A1D /* Sources */,
+				915E211516ECE13300DB4A1D /* Frameworks */,
+				915E211616ECE13300DB4A1D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZoomViewSegue;
+			productName = ZoomViewSegue;
+			productReference = 915E211816ECE13300DB4A1D /* ZoomViewSegue.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		915E211016ECE13300DB4A1D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "iOS Weekend";
+			};
+			buildConfigurationList = 915E211316ECE13300DB4A1D /* Build configuration list for PBXProject "ZoomViewSegue" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 915E210F16ECE13300DB4A1D;
+			productRefGroup = 915E211916ECE13300DB4A1D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				915E211716ECE13300DB4A1D /* ZoomViewSegue */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		915E211616ECE13300DB4A1D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				915E212616ECE13300DB4A1D /* InfoPlist.strings in Resources */,
+				915E212E16ECE13300DB4A1D /* Default.png in Resources */,
+				915E213016ECE13300DB4A1D /* Default@2x.png in Resources */,
+				915E213216ECE13300DB4A1D /* Default-568h@2x.png in Resources */,
+				915E213516ECE13300DB4A1D /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		915E211416ECE13300DB4A1D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				915E212816ECE13300DB4A1D /* main.m in Sources */,
+				915E212C16ECE13300DB4A1D /* AppDelegate.m in Sources */,
+				915E213816ECE13300DB4A1D /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		915E212416ECE13300DB4A1D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				915E212516ECE13300DB4A1D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		915E213316ECE13300DB4A1D /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				915E213416ECE13300DB4A1D /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		915E213916ECE13300DB4A1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		915E213A16ECE13300DB4A1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		915E213C16ECE13300DB4A1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ZoomViewSegue/ZoomViewSegue-Prefix.pch";
+				INFOPLIST_FILE = "ZoomViewSegue/ZoomViewSegue-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		915E213D16ECE13300DB4A1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ZoomViewSegue/ZoomViewSegue-Prefix.pch";
+				INFOPLIST_FILE = "ZoomViewSegue/ZoomViewSegue-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		915E211316ECE13300DB4A1D /* Build configuration list for PBXProject "ZoomViewSegue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				915E213916ECE13300DB4A1D /* Debug */,
+				915E213A16ECE13300DB4A1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		915E213B16ECE13300DB4A1D /* Build configuration list for PBXNativeTarget "ZoomViewSegue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				915E213C16ECE13300DB4A1D /* Debug */,
+				915E213D16ECE13300DB4A1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 915E211016ECE13300DB4A1D /* Project object */;
+}
