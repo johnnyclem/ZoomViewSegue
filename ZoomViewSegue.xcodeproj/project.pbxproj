@@ -18,6 +18,12 @@
 		915E213216ECE13300DB4A1D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 915E213116ECE13300DB4A1D /* Default-568h@2x.png */; };
 		915E213516ECE13300DB4A1D /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 915E213316ECE13300DB4A1D /* MainStoryboard.storyboard */; };
 		915E213816ECE13300DB4A1D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 915E213716ECE13300DB4A1D /* ViewController.m */; };
+		915E214016ECE5A600DB4A1D /* TileCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 915E213F16ECE5A600DB4A1D /* TileCell.m */; };
+		915E214316ECEB5200DB4A1D /* TileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 915E214216ECEB5200DB4A1D /* TileViewController.m */; };
+		915E214616ECEE4500DB4A1D /* ZoomToTileSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 915E214516ECEE4500DB4A1D /* ZoomToTileSegue.m */; };
+		915E214916ECFF4700DB4A1D /* CustomNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 915E214816ECFF4700DB4A1D /* CustomNavigationController.m */; };
+		915E214C16EE82E000DB4A1D /* ReturnFromTileSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 915E214B16EE82E000DB4A1D /* ReturnFromTileSegue.m */; };
+		915E215316EEADA900DB4A1D /* UIImage+Screenshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 915E215216EEADA900DB4A1D /* UIImage+Screenshot.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +43,18 @@
 		915E213416ECE13300DB4A1D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		915E213616ECE13300DB4A1D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		915E213716ECE13300DB4A1D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		915E213E16ECE5A600DB4A1D /* TileCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TileCell.h; sourceTree = "<group>"; };
+		915E213F16ECE5A600DB4A1D /* TileCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TileCell.m; sourceTree = "<group>"; };
+		915E214116ECEB5200DB4A1D /* TileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TileViewController.h; sourceTree = "<group>"; };
+		915E214216ECEB5200DB4A1D /* TileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TileViewController.m; sourceTree = "<group>"; };
+		915E214416ECEE4500DB4A1D /* ZoomToTileSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZoomToTileSegue.h; sourceTree = "<group>"; };
+		915E214516ECEE4500DB4A1D /* ZoomToTileSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZoomToTileSegue.m; sourceTree = "<group>"; };
+		915E214716ECFF4700DB4A1D /* CustomNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNavigationController.h; sourceTree = "<group>"; };
+		915E214816ECFF4700DB4A1D /* CustomNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNavigationController.m; sourceTree = "<group>"; };
+		915E214A16EE82E000DB4A1D /* ReturnFromTileSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReturnFromTileSegue.h; sourceTree = "<group>"; };
+		915E214B16EE82E000DB4A1D /* ReturnFromTileSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReturnFromTileSegue.m; sourceTree = "<group>"; };
+		915E215116EEADA900DB4A1D /* UIImage+Screenshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Screenshot.h"; sourceTree = "<group>"; };
+		915E215216EEADA900DB4A1D /* UIImage+Screenshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Screenshot.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,8 +104,11 @@
 				915E212A16ECE13300DB4A1D /* AppDelegate.h */,
 				915E212B16ECE13300DB4A1D /* AppDelegate.m */,
 				915E213316ECE13300DB4A1D /* MainStoryboard.storyboard */,
-				915E213616ECE13300DB4A1D /* ViewController.h */,
-				915E213716ECE13300DB4A1D /* ViewController.m */,
+				915E215716EEECD300DB4A1D /* Container View Controllers */,
+				915E215516EEECA100DB4A1D /* Content View Controllers */,
+				915E215616EEECBB00DB4A1D /* Custom UI Elements */,
+				915E215416EEEC9300DB4A1D /* Custom Segues */,
+				915E215816EEECF500DB4A1D /* Class Categories */,
 				915E212216ECE13300DB4A1D /* Supporting Files */,
 			);
 			path = ZoomViewSegue;
@@ -105,6 +126,55 @@
 				915E213116ECE13300DB4A1D /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		915E215416EEEC9300DB4A1D /* Custom Segues */ = {
+			isa = PBXGroup;
+			children = (
+				915E214416ECEE4500DB4A1D /* ZoomToTileSegue.h */,
+				915E214516ECEE4500DB4A1D /* ZoomToTileSegue.m */,
+				915E214A16EE82E000DB4A1D /* ReturnFromTileSegue.h */,
+				915E214B16EE82E000DB4A1D /* ReturnFromTileSegue.m */,
+			);
+			name = "Custom Segues";
+			sourceTree = "<group>";
+		};
+		915E215516EEECA100DB4A1D /* Content View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				915E213616ECE13300DB4A1D /* ViewController.h */,
+				915E213716ECE13300DB4A1D /* ViewController.m */,
+				915E214116ECEB5200DB4A1D /* TileViewController.h */,
+				915E214216ECEB5200DB4A1D /* TileViewController.m */,
+			);
+			name = "Content View Controllers";
+			sourceTree = "<group>";
+		};
+		915E215616EEECBB00DB4A1D /* Custom UI Elements */ = {
+			isa = PBXGroup;
+			children = (
+				915E213E16ECE5A600DB4A1D /* TileCell.h */,
+				915E213F16ECE5A600DB4A1D /* TileCell.m */,
+			);
+			name = "Custom UI Elements";
+			sourceTree = "<group>";
+		};
+		915E215716EEECD300DB4A1D /* Container View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				915E214716ECFF4700DB4A1D /* CustomNavigationController.h */,
+				915E214816ECFF4700DB4A1D /* CustomNavigationController.m */,
+			);
+			name = "Container View Controllers";
+			sourceTree = "<group>";
+		};
+		915E215816EEECF500DB4A1D /* Class Categories */ = {
+			isa = PBXGroup;
+			children = (
+				915E215116EEADA900DB4A1D /* UIImage+Screenshot.h */,
+				915E215216EEADA900DB4A1D /* UIImage+Screenshot.m */,
+			);
+			name = "Class Categories";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +246,12 @@
 				915E212816ECE13300DB4A1D /* main.m in Sources */,
 				915E212C16ECE13300DB4A1D /* AppDelegate.m in Sources */,
 				915E213816ECE13300DB4A1D /* ViewController.m in Sources */,
+				915E214016ECE5A600DB4A1D /* TileCell.m in Sources */,
+				915E214316ECEB5200DB4A1D /* TileViewController.m in Sources */,
+				915E214616ECEE4500DB4A1D /* ZoomToTileSegue.m in Sources */,
+				915E214916ECFF4700DB4A1D /* CustomNavigationController.m in Sources */,
+				915E214C16EE82E000DB4A1D /* ReturnFromTileSegue.m in Sources */,
+				915E215316EEADA900DB4A1D /* UIImage+Screenshot.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

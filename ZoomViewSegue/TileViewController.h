@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  TileViewController.h
 //  ZoomViewSegue
 //
 //  Created by Bennett Smith on 3/10/13.
@@ -8,5 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface TileViewController : UIViewController
+@property (nonatomic, strong) NSString *tileName;
 @end

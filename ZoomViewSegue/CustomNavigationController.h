@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  CustomNavigationController.h
 //  ZoomViewSegue
 //
 //  Created by Bennett Smith on 3/10/13.
@@ -8,5 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface CustomNavigationController : UINavigationController
+
 @end
