@@ -24,6 +24,7 @@
 		915E214916ECFF4700DB4A1D /* CustomNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 915E214816ECFF4700DB4A1D /* CustomNavigationController.m */; };
 		915E214C16EE82E000DB4A1D /* ReturnFromTileSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 915E214B16EE82E000DB4A1D /* ReturnFromTileSegue.m */; };
 		915E215316EEADA900DB4A1D /* UIImage+Screenshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 915E215216EEADA900DB4A1D /* UIImage+Screenshot.m */; };
+		91BD270116F68BB600566348 /* QTouchposeApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BD270016F68BB600566348 /* QTouchposeApplication.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,8 @@
 		915E214B16EE82E000DB4A1D /* ReturnFromTileSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReturnFromTileSegue.m; sourceTree = "<group>"; };
 		915E215116EEADA900DB4A1D /* UIImage+Screenshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Screenshot.h"; sourceTree = "<group>"; };
 		915E215216EEADA900DB4A1D /* UIImage+Screenshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Screenshot.m"; sourceTree = "<group>"; };
+		91BD26FF16F68BB600566348 /* QTouchposeApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTouchposeApplication.h; sourceTree = "<group>"; };
+		91BD270016F68BB600566348 /* QTouchposeApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTouchposeApplication.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,8 @@
 		915E212216ECE13300DB4A1D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				91BD26FF16F68BB600566348 /* QTouchposeApplication.h */,
+				91BD270016F68BB600566348 /* QTouchposeApplication.m */,
 				915E212316ECE13300DB4A1D /* ZoomViewSegue-Info.plist */,
 				915E212416ECE13300DB4A1D /* InfoPlist.strings */,
 				915E212716ECE13300DB4A1D /* main.m */,
@@ -252,6 +257,7 @@
 				915E214916ECFF4700DB4A1D /* CustomNavigationController.m in Sources */,
 				915E214C16EE82E000DB4A1D /* ReturnFromTileSegue.m in Sources */,
 				915E215316EEADA900DB4A1D /* UIImage+Screenshot.m in Sources */,
+				91BD270116F68BB600566348 /* QTouchposeApplication.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,6 +380,7 @@
 				915E213D16ECE13300DB4A1D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

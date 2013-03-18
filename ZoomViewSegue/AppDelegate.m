@@ -7,12 +7,18 @@
 //
 
 #import "AppDelegate.h"
+#import "QTouchposeApplication.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    // For demo purposes, show the touches even when not mirroring to an external display.
+    QTouchposeApplication *touchposeApplication = (QTouchposeApplication *)application;
+    touchposeApplication.alwaysShowTouches = YES;
+    
     return YES;
 }
 							

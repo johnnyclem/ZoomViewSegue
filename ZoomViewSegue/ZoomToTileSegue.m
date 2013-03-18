@@ -11,6 +11,44 @@
 
 @implementation ZoomToTileSegue
 
+- (void)perform
+{
+    UIViewController *svc = (UIViewController *) self.sourceViewController;
+    UIViewController *dvc = (UIViewController *) self.destinationViewController;
+    
+    UIImage *sourceViewImage = [UIImage screenshotFromView:svc.view];
+    UIImageView *tempView = [[UIImageView alloc] initWithImage:sourceViewImage];
+    
+    [svc.navigationController pushViewController:dvc animated:NO];
+
+    UIView *actualDestinationView = dvc.view;
+    dvc.view = tempView;
+
+    CGRect frame = actualDestinationView.frame;
+    frame.origin.x = 0.0f;
+    frame.origin.y = 0.0f;
+    actualDestinationView.frame = frame;
+    
+    [actualDestinationView setTransform:CGAffineTransformMakeScale(0.25f, 0.25f)];
+    [actualDestinationView setAlpha:0.0];
+    
+    [dvc.view addSubview:actualDestinationView];
+    
+    [UIView animateWithDuration:0.1667f
+                          delay:0.0f
+                        options:UIViewAnimationOptionCurveEaseOut
+                     animations:^{
+                         [actualDestinationView setTransform:CGAffineTransformMakeScale(1.0f, 1.0f)];
+                         [actualDestinationView setAlpha:1.0];
+                     }
+                     completion:^(BOOL finished){
+                         dvc.view = actualDestinationView;
+                     }];
+}
+
+// *****************************************************************************
+#pragma mark -                                            Private Helper Methods
+// *****************************************************************************
 
 CGPoint CGRectGetCenter(CGRect rect)
 {
@@ -27,41 +65,6 @@ CGRect CGRectMoveToCenter(CGRect rect, CGPoint center)
     newrect.origin.y = center.y - CGRectGetMidY(rect);
     newrect.size = rect.size;
     return newrect;
-}
-
-- (void)perform
-{
-    UIViewController *sourceViewController = (UIViewController *) self.sourceViewController;
-    UIViewController *destinationViewController = (UIViewController *) self.destinationViewController;
-    
-    UIImage *sourceViewImage = [UIImage screenshotFromView:sourceViewController.view];
-    UIImageView *tempView = [[UIImageView alloc] initWithImage:sourceViewImage];
-    
-    [sourceViewController.navigationController pushViewController:destinationViewController animated:NO];
-
-    UIView *actualDestinationView = destinationViewController.view;
-    destinationViewController.view = tempView;
-
-    CGRect frame = actualDestinationView.frame;
-    frame.origin.x = 0.0f;
-    frame.origin.y = 0.0f;
-    actualDestinationView.frame = frame;
-    
-    [actualDestinationView setTransform:CGAffineTransformMakeScale(0.25f, 0.25f)];
-    [actualDestinationView setAlpha:0.0];
-    
-    [destinationViewController.view addSubview:actualDestinationView];
-    
-    [UIView animateWithDuration:0.1667f
-                          delay:0.0f
-                        options:UIViewAnimationOptionCurveEaseOut
-                     animations:^{
-                         [actualDestinationView setTransform:CGAffineTransformMakeScale(1.0f, 1.0f)];
-                         [actualDestinationView setAlpha:1.0];
-                     }
-                     completion:^(BOOL finished){
-                         destinationViewController.view = actualDestinationView;
-                     }];
 }
 
 @end

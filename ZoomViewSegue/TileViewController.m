@@ -23,6 +23,10 @@
     return self;
 }
 
+// *****************************************************************************
+#pragma mark -                                         View Controller Lifecycle
+// *****************************************************************************
+
 - (void)viewDidLoad
 {
     NSLog(@"[TileViewController viewDidLoad]");
@@ -61,6 +65,10 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+// *****************************************************************************
+#pragma mark -                                            Private Helper Methods
+// *****************************************************************************
 
 - (void)updateTileLabel
 {

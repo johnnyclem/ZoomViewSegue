@@ -17,6 +17,24 @@
 
 @implementation ViewController
 
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        // Custom initialization
+    }
+    return self;
+}
+
+- (void)dealloc
+{
+    
+}
+
+// *****************************************************************************
+#pragma mark -                                         View Controller Lifecycle
+// *****************************************************************************
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -52,30 +70,52 @@
     NSLog(@"[ViewController viewDidDisappear:%@]", animated ? @"YES" : @"NO");
 }
 
+// *****************************************************************************
+#pragma mark -                               Collection View Data Source Methods
+// *****************************************************************************
+
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
 {
+    NSLog(@"[%@ %@]", [self class], NSStringFromSelector(_cmd));
     return 1;
 }
 
-- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
+- (NSInteger)collectionView:(UICollectionView *)collectionView
+     numberOfItemsInSection:(NSInteger)section
 {
+    NSLog(@"[%@ %@]", [self class], NSStringFromSelector(_cmd));
     return 9;
 }
 
-- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView
+                  cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    TileCell *cell = (TileCell *)[collectionView dequeueReusableCellWithReuseIdentifier:@"Tile" forIndexPath:indexPath];
+    NSLog(@"[%@ %@]", [self class], NSStringFromSelector(_cmd));
+
+    TileCell *cell = (TileCell *)[collectionView dequeueReusableCellWithReuseIdentifier:@"Tile"
+                                                                           forIndexPath:indexPath];
     [cell updateDisplayWithIndexPath:indexPath];
     return cell;
 }
 
-- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+// *****************************************************************************
+#pragma mark -                                  Collection View Delegate Methods
+// *****************************************************************************
+
+- (void)collectionView:(UICollectionView *)collectionView
+                             didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    
+    NSLog(@"[%@ %@]", [self class], NSStringFromSelector(_cmd));    
 }
+
+// *****************************************************************************
+#pragma mark -                                          Storyboard Segue Methods
+// *****************************************************************************
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
+    NSLog(@"[%@ %@]", [self class], NSStringFromSelector(_cmd));
+
     if ([[segue identifier] isEqualToString:@"ZoomToTile"]) {
 
         // Determine which item is currently selected.
@@ -101,7 +141,9 @@
             [vc setTileName:message];
             
             // Get the selected cell so we can pull the background color.
-            UICollectionViewCell *selectedCell = [self.collectionView cellForItemAtIndexPath:selectedItem];
+            UICollectionViewCell *selectedCell =
+                    [self.collectionView cellForItemAtIndexPath:selectedItem];
+            
             if ([selectedCell isKindOfClass:[TileCell class]]) {
                 TileCell *tileCell = (TileCell *)selectedCell;
                 [vc.view setBackgroundColor:[tileCell backgroundColor]];
@@ -114,21 +156,30 @@
     }
 }
 
-- (BOOL)canPerformUnwindSegueAction:(SEL)action fromViewController:(UIViewController *)fromViewController withSender:(id)sender
+- (BOOL)canPerformUnwindSegueAction:(SEL)action
+                 fromViewController:(UIViewController *)fromViewController
+                         withSender:(id)sender
 {
+    NSLog(@"[%@ %@]", [self class], NSStringFromSelector(_cmd));
+
     // Make sure the unwind segue is coming from the correct type of view controller
     // and that this view controller actually has a selector for the unwind action.
-    if ([fromViewController isKindOfClass:[TileViewController class]] && [self respondsToSelector:action]) {
+    if ([fromViewController isKindOfClass:[TileViewController class]] &&
+        [self respondsToSelector:action]) {
         return YES;
     }
     
     // Hand off to the super class since we can't perform the unwind segue
     // in this view controller.
-    return [super canPerformUnwindSegueAction:action fromViewController:fromViewController withSender:sender];
+    return [super canPerformUnwindSegueAction:action
+                           fromViewController:fromViewController
+                                   withSender:sender];
 }
 
 - (IBAction)unwindFromTile:(UIStoryboardSegue *)segue
 {
+    NSLog(@"[%@ %@]", [self class], NSStringFromSelector(_cmd));
+
     // This is where you have access to values that were set or updated
     // in the source view controller.
     if ([[segue sourceViewController] isKindOfClass:[TileViewController class]]) {

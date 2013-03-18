@@ -13,15 +13,17 @@
 
 - (void)perform
 {
-    UIViewController *sourceViewController = (UIViewController *) self.sourceViewController;
-    UIViewController *destinationViewController = (UIViewController *) self.destinationViewController;
+    UIViewController *svc =
+                (UIViewController *) self.sourceViewController;
+    UIViewController *dvc =
+                (UIViewController *) self.destinationViewController;
     
-    UIImage *sourceViewImage = [UIImage screenshotFromView:sourceViewController.view];
+    UIImage *sourceViewImage = [UIImage screenshotFromView:svc.view];
     UIImageView *tempView = [[UIImageView alloc] initWithImage:sourceViewImage];
     
-    [destinationViewController.navigationController popToViewController:destinationViewController animated:NO];
+    [dvc.navigationController popToViewController:dvc animated:NO];
 
-    [destinationViewController.view addSubview:tempView];
+    [dvc.view addSubview:tempView];
     
     [tempView setTransform:CGAffineTransformMakeScale(1.0f, 1.0f)];
     [tempView setAlpha:1.0];

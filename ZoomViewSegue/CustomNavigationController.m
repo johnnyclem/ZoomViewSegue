@@ -25,6 +25,10 @@
     return self;
 }
 
+// *****************************************************************************
+#pragma mark -                                         View Controller Lifecycle
+// *****************************************************************************
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -37,17 +41,29 @@
     // Dispose of any resources that can be recreated.
 }
 
+// *****************************************************************************
+#pragma mark -                                          Storyboard Segue Methods
+// *****************************************************************************
+
 // Choose the unwind segue based on the identifier provided.
-- (UIStoryboardSegue *)segueForUnwindingToViewController:(UIViewController *)toViewController fromViewController:(UIViewController *)fromViewController identifier:(NSString *)identifier
+- (UIStoryboardSegue *)segueForUnwindingToViewController:(UIViewController *)toViewController
+                                      fromViewController:(UIViewController *)fromViewController
+                                              identifier:(NSString *)identifier
 {
+    NSLog(@"[%@ %@]", [self class], NSStringFromSelector(_cmd));
+
     UIStoryboardSegue *segue = nil;
     
     if ([@"ReturnFromTile" isEqualToString:identifier]) {
         // Allocate our custom unwind segue.
-        segue = [[ReturnFromTileSegue alloc] initWithIdentifier:identifier source:fromViewController destination:toViewController];;
+        segue = [[ReturnFromTileSegue alloc] initWithIdentifier:identifier
+                                                         source:fromViewController
+                                                    destination:toViewController];;
     } else {
         // Punt - let the system supply an unwind segue.
-        segue = [super segueForUnwindingToViewController:toViewController fromViewController:fromViewController identifier:identifier];
+        segue = [super segueForUnwindingToViewController:toViewController
+                                      fromViewController:fromViewController
+                                              identifier:identifier];
     }
     
     return segue;
